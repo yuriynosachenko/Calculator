@@ -12,6 +12,7 @@ enum CalcActionType {
     case mnogynia
     case dilenia
     case dorivnue
+    case obnulenya
     case none
 }
 class CalculatorViewController: UIViewController {
@@ -39,6 +40,9 @@ class CalculatorViewController: UIViewController {
     }
     @IBAction func pressDorivnue(_ sender: UIButton) {
         actionType = .dorivnue
+    }
+    @IBAction func pressObnulenya(_ sender: UIButton) {
+        actionType = .obnulenya
     }
 }
 
